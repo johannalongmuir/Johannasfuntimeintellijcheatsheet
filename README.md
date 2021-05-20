@@ -21,11 +21,14 @@ Will pull out as a CONSTANT. Again will suggest if sees the same thing in multip
 Go to class name, use  <kbd>Command</kbd> + <kbd>N</kbd> and will create a test class for you with the same name and package structure.  
 In Test classes use <kbd>Command</kbd> + <kbd>N</kbd> to create setup / breakdown tests and test methods.
 
+### EXTRACT FIELD: <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>F</kbd>
+Will pull variable to instance variable.
+
 ### EXTRACT METHOD: <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>M</kbd>
 Extract method. Will help you by looking at other lines of code that look like they do the same thing and ask if you want to extract it on all. Also suggests things like what parameters to take in and will automatically assign the correct ones from where you have removed the method
 
 ### MOVE METHODS / VARIABLES / CONSTANTS: <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>Arrows</kbd>
 Moves methods/constants/variables up and down in code. Moving methods should move the whole method
 
-### OPTIMISE IMPORTS: <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>)</kbd>
+### OPTIMISE IMPORTS: <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>0</kbd>
 Removes unused imports
