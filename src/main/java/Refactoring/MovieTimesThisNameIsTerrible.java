@@ -1,18 +1,28 @@
 package Refactoring;
 
-import Entities.Movies;
+import Entities.Movie;
 
 import java.util.List;
 
 public class MovieTimesThisNameIsTerrible {
 
-    public List<Movies> tooManyVariables(){
+    public List<Movie> tooManyVariables(){
 
-        Movies alien = new Movies("Harry Potter", "Sci-Fi");
-        Movies lordOfTheRings = new Movies("The Lord of the Rings", "Fantasy");
-        Movies harryPotter = new Movies("Harry Potter", "Fantasy");
+        Movie alien = new Movie("Alien", "Sci-Fi");
+        Movie lordOfTheRings = new Movie("The Lord of the Rings", "Fantasy");
+        Movie harryPotter = new Movie("Harry Potter", "Fantasy");
 
         return List.of(alien, lordOfTheRings, harryPotter);
     }
 
+    public List<Movie> stillTooManyVariables(){
+
+        Movie gattaca = new Movie("Gattaca", "Sci-Fi");
+        Movie jumanji = new Movie("Jumanji", "Fantasy");
+        Movie scottPilgrim = new Movie("Scott Pilgrim vs. the World", "Fantasy");
+
+        return List.of(gattaca, jumanji, scottPilgrim);
+    }
+
 }
+

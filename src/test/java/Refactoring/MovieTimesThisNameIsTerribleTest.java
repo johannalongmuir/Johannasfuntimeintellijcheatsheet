@@ -1,7 +1,7 @@
 package Refactoring;
 
 
-import Entities.Movies;
+import Entities.Movie;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -13,7 +13,7 @@ class MovieTimesThisNameIsTerribleTest {
     @Test
     void movieGenres() {
         MovieTimesThisNameIsTerrible variables = new MovieTimesThisNameIsTerrible();
-        List<Movies> movies = variables.tooManyVariables();
+        List<Movie> movies = variables.tooManyVariables();
 
         assertEquals(3, movies.size());
         assertEquals("Sci-Fi", movies.get(0).getMovieGenre());

@@ -1,11 +1,11 @@
 package Entities;
 
-public class Movies {
+public class Movie {
 
     private String movieName;
     private String movieGenre;
 
-    public Movies(String movieName, String movieGenre) {
+    public Movie(String movieName, String movieGenre) {
         this.movieName = movieName;
         this.movieGenre = movieGenre;
     }
