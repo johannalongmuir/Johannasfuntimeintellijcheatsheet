@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovieTimesThisNameIsTerribleTest {
 
+
     @Test
     void movieGenres() {
         MovieTimesThisNameIsTerrible variables = new MovieTimesThisNameIsTerrible();

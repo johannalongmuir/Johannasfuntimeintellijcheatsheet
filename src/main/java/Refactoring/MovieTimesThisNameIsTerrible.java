@@ -8,11 +8,11 @@ public class MovieTimesThisNameIsTerrible {
 
     public List<Movie> tooManyVariables(){
 
-        Movie alien = new Movie("Alien", "Sci-Fi");
+        Movie notalien = new Movie("Alien", "Sci-Fi");
         Movie lordOfTheRings = new Movie("The Lord of the Rings", "Fantasy");
         Movie harryPotter = new Movie("Harry Potter", "Fantasy");
 
-        return List.of(alien, lordOfTheRings, harryPotter);
+        return List.of(notalien, lordOfTheRings, harryPotter);
     }
 
     public List<Movie> stillTooManyVariables(){
