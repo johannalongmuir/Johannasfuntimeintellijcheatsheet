@@ -63,6 +63,11 @@ forwards.
 
 Brings up all the places your selection is used in the codebase.
 
+### QUICK DOCUMENTATION: <kbd>Control</kbd> + <kbd>J</kbd>
+
+Shows what parameters are needed for a method including their data types. Also brings up basic documentation on data
+types without having to go to the full documentation.
+
 ### ADD SELECTION FOR NEXT OCCURANCE: <kbd>Control</kbd> + <kbd>G</kbd>
 
 Go to a word, each time you select <kbd>Control</kbd> + <kbd>G</kbd> it will highlight the next time that word is used.
