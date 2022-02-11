@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Cinema {
 
+    // Don't use the method use showingBadSpellingStuff as its not helpful
+
     public Movie showingToday(){
         Movie movie = new Movie("Wonder Woman", "Superhero");
         return movie;
