@@ -1,5 +1,7 @@
 # IntelliJ Cheat Sheet
 
+Use the [Exercise](Exercise.md) to practice these shortcuts.
+
 ### QUICK FIX INFO: <kbd>Option</kbd> + <kbd>Enter</kbd>
 
 Will give you suggested fixes where available

@@ -21,4 +21,9 @@ public class Cinema {
         return movie;
     }
 
+    public Movie showingBadSpellingStuff(){
+        Movie movie = new Movie("Wonde Woman", "Supehero");
+        return movie;
+    }
+
 }
