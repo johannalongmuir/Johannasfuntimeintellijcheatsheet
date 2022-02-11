@@ -19,8 +19,12 @@ public class Cinema {
     }
 
     public Movie showingNextWeek(){
-        Movie movie = new Movie("Wonder Woman", "Superhero");
+        Movie movie = getMovieshowingNextWeek();
         return movie;
+    }
+
+    private Movie getMovieshowingNextWeek() {
+        return new Movie("Wonder Woman", "Superhero");
     }
 
     public Movie showingBadSpellingStuff(){
