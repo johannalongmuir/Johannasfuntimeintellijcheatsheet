@@ -18,13 +18,24 @@
   - `stillTooManyVariables()` -> `showingAtMyMums()`
 
 ### 3: Extract Variables 
-- Go to the class you renamed in section 2,  MoviesByLocation [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
+- Go to the class you renamed in section 2, [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
 - Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>V</kbd> to extract the following variables
   - "Sci-Fi" 
   - "Fantasy". Select replace all
 
+### 4: Inline Variables
+- Go to the class you renamed in section 2, [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
+- Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd> to inline the following variables created in section 3
+  - The variable name itself created section 3 for "Sci-Fi".
+  - Go to where the variable fantasy is used for lordOfTheRings and inline the variable. Inline this occurance only and keep the variable.
+  - Undo and inline the fantasy variable. 
 
-
+### 5: Extract Constant
+- Go to the class you renamed in section 2, [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
+- Use  <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd> to extract "Sci-Fi" to a local constant. Make sure to select replace all occurrences.
+- Use  <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd> to extract "Fantasy", this time also select to move to another location and move to `Entities.Genres`.
+- Feel free inline the local constant for SCI_FI, and then extract to the Genres class.
+- Use quick select from section 1, to add `Genres` as static import (<kbd>Option</kbd> + <kbd>Enter</kbd>)
 
 ### Troubleshooting
 - If you have issues running the tests, update your preferences in intelliJ
