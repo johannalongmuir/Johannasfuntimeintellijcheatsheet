@@ -13,8 +13,8 @@ class MovieTimesThisNameIsTerribleTest {
 
     @Test
     void movieGenres() {
-        MovieTimesThisNameIsTerrible variables = new MovieTimesThisNameIsTerrible();
-        List<Movie> movies = variables.tooManyVariables();
+        MovieTimesThisNameIsTerrible movieTimesThisNameIsTerrible = new MovieTimesThisNameIsTerrible();
+        List<Movie> movies = movieTimesThisNameIsTerrible.tooManyVariables();
 
         assertEquals(3, movies.size());
         assertEquals("Sci-Fi", movies.get(0).getMovieGenre());
