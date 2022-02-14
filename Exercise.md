@@ -1,5 +1,7 @@
 # Practice shortcuts exercise
 
+The exercises are intended to be completed in order however if you wish to complete in any order, note that the naming might be slightly different. 
+
 ### 1: Using Quick Info
 - Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class method `showingBadSpellingStuff()` 
 - Use <kbd>Option</kbd> + <kbd>Enter</kbd> on "Wonde Woman" and "Supehero" to correct the spelling.
@@ -29,6 +31,7 @@
   - The variable name itself created section 3 for "Sci-Fi".
   - Go to where the variable fantasy is used for lordOfTheRings and inline the variable. Inline this occurance only and keep the variable.
   - Undo and inline the fantasy variable. 
+- Inline methods, using the same command will be covered in section 8.
 
 ### 5: Extract Constant
 - Go to the class you renamed in section 2, [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
@@ -36,6 +39,57 @@
 - Use  <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd> to extract "Fantasy", this time also select to move to another location and move to `Entities.Genres`.
 - Feel free inline the local constant for SCI_FI, and then extract to the Genres class.
 - Use quick select from section 1, to add `Genres` as static import (<kbd>Option</kbd> + <kbd>Enter</kbd>)
+
+### 6: Test classes and methods
+- You can use <kbd>Command</kbd> + <kbd>N</kbd> to easily create test classes and setup methods
+- Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class.
+- Use <kbd>Command</kbd> + <kbd>N</kbd> on the class name, and select generate a test for the method `showingtoday()`
+  - Write a quick test:
+     ```
+    Cinema cinema = new Cinema();
+    Movie movie = cinema.showingToday();
+    assertEquals("Superhero", movie.getMovieGenre());
+    ```
+  - You can try writing cinema.showingToday().var to generate the Movie variable
+- Use <kbd>Command</kbd> + <kbd>N</kbd> to create a new test for showing tomorrow
+- Use  <kbd>Command</kbd> + <kbd>N</kbd> to generate a setUp method
+
+### 7: Extract Field
+- Go to the [CinemaTest](src/test/java/Refactoring/CinemaTest.java) class.
+- Hover over the declaration of Cinema in the showingToday test. 
+  - Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>F</kbd> to extract the field. 
+  - Select initilize in field declaration.
+- Remove the setup method if it is still there from the previous excercise
+- Extract field with set-up method
+  - Hover over the new Cinema field declaration and inline <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd> removing the field.
+  - Hover over new Cinema() and use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>F</kbd> to extract the field again
+  - Select Initilize in setUp
+  - Select replace all occurances
+
+  
+### 8: Inline method
+- This is the same process as inlining variables covered in section 4.
+- Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class.
+- Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd> to inline method `getMovieshowingNextWeek()`
+
+### 9: Extract method
+- Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class.
+- Go to Movie declaration in showingTodayMethod()....
+- Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>M</kbd> to extract method
+- Replace all
+
+### 9: Move methods and variables
+- Move wonderWoman method to the bottom of the class using <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>Arrows</kbd>
+
+### 10: Quick extras
+- Quick documentation (movie declaration): <kbd>Control</kbd> + <kbd>J</kbd>
+- Optimise your imports (Cinema class): <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>O</kbd>
+- Show your useages: <kbd>Option</kbd> + <kbd>F7</kbd>
+- Select next instance of a word (movie): <kbd>Control</kbd> + <kbd>G</kbd>
+- Format your stuff (Cinema class): <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>L</kbd>
+- Move to where your mouse last was: <kbd>Command</kbd> + <kbd>`[`</kbd> or <kbd>`]`</kbd>
+- Plugin called presentation assistant which can be helpful if you are pairing with newer people
+
 
 ### Troubleshooting
 - If you have issues running the tests, update your preferences in intelliJ
