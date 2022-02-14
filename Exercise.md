@@ -5,7 +5,7 @@ The exercises are intended to be completed in order however if you wish to compl
 ### 1: Using Quick Info
 - Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class method `showingBadSpellingStuff()` 
 - Use <kbd>Option</kbd> + <kbd>Enter</kbd> on "Wonde Woman" and "Supehero" to correct the spelling.
-- Use <kbd>Option</kbd> + <kbd>Enter</kbd> on the method name to safe delete the method. Pay attention to the pop up, and select check for strings. 
+- Use <kbd>Option</kbd> + <kbd>Enter</kbd> on the method name `showingBadSpellingStuff()` to safe delete the method. Pay attention to the pop up, and select check for strings. 
 
 
 ### 2: Renaming 
@@ -30,14 +30,16 @@ The exercises are intended to be completed in order however if you wish to compl
 - Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd> to inline the following variables created in section 3
   - The variable name itself created section 3 for "Sci-Fi".
   - Go to where the variable fantasy is used for lordOfTheRings and inline the variable. Inline this occurance only and keep the variable.
-  - Undo and inline the fantasy variable. 
+  - Undo
+  - Inline the fantasy variable for all occurances. 
 - Inline methods, using the same command will be covered in section 8.
 
 ### 5: Extract Constant
 - Go to the class you renamed in section 2, [MoviesByLocation](src/main/java/Refactoring/MoviesByLocation.java).
 - Use  <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd> to extract "Sci-Fi" to a local constant. Make sure to select replace all occurrences.
 - Use  <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd> to extract "Fantasy", this time also select to move to another location and move to `Entities.Genres`.
-- Feel free inline the local constant for SCI_FI, and then extract to the Genres class.
+- Inline the local constant for SCI_FI with <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd>
+- Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>C</kbd>  to extract "SCI_FI" to the Genres class.
 - Use quick select from section 1, to add `Genres` as static import (<kbd>Option</kbd> + <kbd>Enter</kbd>)
 
 ### 6: Test classes and methods
@@ -73,22 +75,24 @@ The exercises are intended to be completed in order however if you wish to compl
 - Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>N</kbd> to inline method `getMovieshowingNextWeek()`
 
 ### 9: Extract method
-- Go to the [Cinema](src/main/java/Refactoring/Cinema.java) class.
-- Go to Movie declaration in showingTodayMethod()....
-- Use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>M</kbd> to extract method
+- Go to `showingToday()` in the [Cinema](src/main/java/Refactoring/Cinema.java) class.
+- Select where movie variable is created and use <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>M</kbd> to extract method
 - Replace all
 
-### 9: Move methods and variables
-- Move wonderWoman method to the bottom of the class using <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>Arrows</kbd>
+### 10: Move methods and variables
+- Move your method created in section 9 (getMovie()) method to the bottom of the class using <kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>Arrows</kbd>
 
-### 10: Quick extras
-- Quick documentation (movie declaration): <kbd>Control</kbd> + <kbd>J</kbd>
-- Optimise your imports (Cinema class): <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>O</kbd>
-- Show your useages: <kbd>Option</kbd> + <kbd>F7</kbd>
-- Select next instance of a word (movie): <kbd>Control</kbd> + <kbd>G</kbd>
-- Format your stuff (Cinema class): <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>L</kbd>
+### 11: Extras
+- Quick documentation: <kbd>Control</kbd> + <kbd>J</kbd>
+  - Test on `new Movie(...)` to show what parameters are needed
+- Optimise your imports: <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>O</kbd>
+  - Cinema.class has some unused imports that can be removed
+- Show all usages: <kbd>Option</kbd> + <kbd>F7</kbd>
+- Select next instance of a word: <kbd>Control</kbd> + <kbd>G</kbd>
+  - Select first word "movie" in Cinema class
+- Format your stuff: <kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>L</kbd>
+  - Cinema class has a few methods that will add spaces before the {
 - Move to where your mouse last was: <kbd>Command</kbd> + <kbd>`[`</kbd> or <kbd>`]`</kbd>
-- Plugin called presentation assistant which can be helpful if you are pairing with newer people
 
 
 ### Troubleshooting
